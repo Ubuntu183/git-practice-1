@@ -1,2 +1,3 @@
 GreetingText = "Hello, from person3!"
-print(GreetingText)
+
+print(GreetingText.upper())
