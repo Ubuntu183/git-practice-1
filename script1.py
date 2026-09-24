@@ -1,2 +1,2 @@
 GreetingText = "Hello, World!"
-print(GreetingText)
+print(GreetingText.upper())
