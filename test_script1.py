@@ -14,6 +14,10 @@ class GreetingTests(unittest.TestCase):
             check=True,
         )
         self.assertEqual(result.stdout.strip(), "HELLO, FROM PERSON3!")
+    def test_personalized_greeting(self):
+        self.assertEqual(make_greeting("Anna"), "HELLO, ANNA!")
+    def test_mixed_case_name(self):
+        self.assertEqual(make_greeting("aNnA"), "HELLO, ANNA!")
 
 if __name__ == "__main__":
     unittest.main()
